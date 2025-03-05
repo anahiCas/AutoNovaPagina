@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #001f3f;
+}
+
+/* Navegación */
+nav {
+    background-color: #001f3f;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.menu {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu:hover {
+    color: #007bff;
+}
+
+nav a.menu:hover {
+    text-decoration: underline;
+}
+.h2marcas{
+    text-align: center;
+    font-size: 3rem;
+    background-color: transparent;
+    margin: 2rem 0;
+
+    
+} 
+
+.honda {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.ford {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    
+}
+.vw {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card div {
+    flex: 1;
+    min-width: 300px;
+    max-width: 30%;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.card div:hover {
+    transform: scale(1.05);
+}
+
+.card div h2 {
+    font-size: 2em;
+    color: #001f3f;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.img_imagen1, .img_imagen2, .img_imagen3 {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    background-color: transparent;
+}
+
+.Descripcion_imagen {
+    font-size: 0.9em;
+    color: #001f3f;
+    margin: 10px 0;
+}
+iframe{
+    width: 100%;
+}
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #001f3f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+a:hover {
+    background-color: #001f3f;
+}
+
+@media (max-width: 1024px) {
+    .card {
+        justify-content: center;
+    }
+
+    .card div {
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card div {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav a.menu {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .card div h2 {
+        font-size: 1.5em;
+    }
+
+    .card div {
+        max-width: 100%;
+    }
+}
